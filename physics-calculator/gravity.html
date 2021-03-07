@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0.8"/>
+<title>Physics-calculator</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body onkeypress="enter(event)">
+<center>
+<img src="gravity.png" width="330px"/></br></br></br>
+</center>
+<center/>
+<input type="number" id="m1" placeholder="mass 1(kg)"/></br></br></br>
+<input type="number" id="m2" placeholder="mass 2(kg)"/></br></br></br>
+<input type="number" id="r" placeholder="Radius (r)(m)"/></br></br></br>
+</center>
+<center>
+<button onclick="add()" class="btn">Calculate</button>
+</center>
+<img src="reload.png" id="reload" onclick="reload()"/>
+</body>
+<script>
+function add(){
+var m1=document.getElementById("m1").value;
+var m2=document.getElementById("m2").value;
+var r=document.getElementById("r").value;
+var result=parseFloat(m1)*parseFloat(m2)/parseFloat(r**2)*6.67*10**-11;
+	alert(result+" N");
+};
+function reload(){
+	location.reload();
+}
+function enter(e){
+	if(e.keyCode==13){
+	add();
+}
+}
+</script>
+</html>

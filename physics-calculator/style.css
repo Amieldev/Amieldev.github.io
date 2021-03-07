@@ -1,0 +1,30 @@
+body{
+	font-family:cursive;
+}
+input{
+	height:30px;
+}
+.density{
+	height:190px;
+}
+#reload{
+	position:absolute;
+	bottom:15px;right:10px;
+	width:70px;border-radius:50%;
+}
+#link{
+	border:4px solid #20c0ff;
+	background-color:#20c0ff;
+	width:300px;
+	border-radius:10px;
+}
+button{
+	border-radius:10px;
+    background: linear-gradient(-45deg,#0080ff,cyan);
+	width:175px;height:50px;
+	cursor:pointer;
+	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+}
+input{
+	border-radius:10px; 
+}

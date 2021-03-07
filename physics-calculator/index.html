@@ -1,0 +1,74 @@
+<!doctype html>
+<html onkeydown="search(event)">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0.8"/>
+<style>
+.title{
+	font-size:40px;
+	background:linear-gradient(-45deg,#0080ff,cyan);
+	border:2px solid black;
+	width:300px;border-radius:10px;
+	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+	color:white;
+	text-shadow:3px 3px black;
+}
+#srch{
+	width:250px;height:30px;
+	border-radius:20px;
+}
+.btn{
+	width:30px;
+	position:relative;
+	top:10px;left:3px;
+	box-shadow:none;
+}
+.sbox{
+	background-color:#00ff00;
+	width:310px;border-radius:50px;height:45px;border:2px solid black;
+	background:linear-gradient(45deg,cyan,#0080ff);
+	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+}
+div{
+	border:3px solid silver;width:310px;
+	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+	border-radius:20px;
+	background:linear-gradient(45deg,cyan,#0080ff);color:white;
+}
+</style>
+<title>Physics-calculator</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<center>
+<h1 class="title">Physics calculator</h1><br>
+</center>
+<center>
+<div class="sbox">
+<input type="text" id="srch" placeholder="Type to search..."/><img src="search.png" class="btn" onclick="srch()"/>
+</div><br>
+</center>
+<center>
+<div>
+<h1>Density</h1>
+<a href="density.html"/><img src="dense.png" class="density" id="link"/></a>
+</div><br><br>
+<div>
+<h1>Speed</h1>
+<a href="speed.html"/><img src="speed icon.jpg" class="speed" id="link"/></a>
+</div><br><br>
+<div>
+<h1>Force</h1>
+<a href="force.html"/><img src="force.jpg" class="force" id="link" /></a>
+</div><br><br>
+<div>
+<h1>Acceleration</h1>
+<a href="acceleration.html"/><img src="blur car.jpg" class="acceleration" id="link"/></a>
+</div><br><br>
+<div>
+<h1>Gravitaional force</h1>
+<a href="gravity.html"/><img src="grav.jpg" class="gravity" id="link"/></a>
+</div>
+</center>
+</body>
+<script src="search.js"></script>
+</html>

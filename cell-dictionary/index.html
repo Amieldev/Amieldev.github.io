@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html onkeypress="search(event)">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0.8"/>
+<style>
+html{overflow:hidden;}
+body{
+	background-size:cover;
+	background-repeat:none;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Cell-Dictionary</title>
+</head>
+<body>
+<img class="light_dark" onclick="dark()" src="sun.png"/>
+<center>
+<button class="title" class="theme" id="theme">Cell-Dictionary</button><br><br><br><br>
+</center>
+<center>
+<div class="sbox" id="theme">
+<input type="text" id="srch" list="d_list" placeholder="Type to search..."/><img src="search.png" class="btn" onclick="srch()"/>
+<datalist id="d_list">
+<option value="Cell"></option>
+<option value="Nucleus"></option>
+<option value="Endo plasmic reticulum"></option>
+<option value="Large central vacuole"></option>
+<option value="Cell membrane"></option>
+<option value="Cell wall"></option>
+<option value="Lysosome"></option>
+<option value="Mitochondria"></option>
+<option value="Micro scope"></option>
+<option value="Bio logy"></option>
+<option value="Chromosomes"></option>
+<option value="Ribosome"></option>
+<option value="Cytoplasm"></option>
+<option value="Golgi body"></option>
+</datalist>
+</div>
+</center>
+</body>
+<script>
+var body=document.querySelector("body");
+setInterval(function(){
+	if(window.innerWidth>window.innerHeight){
+	body.style.backgroundImage="url('pc-bg.jpg')";
+}
+	if(window.innerWidth<window.innerHeight){
+	body.style.backgroundImage="url('m-bg.jpg')";
+}
+},10)
+</script>
+<script src="search.js"></script>
+<script src="bg.js"></script>
+</html>
