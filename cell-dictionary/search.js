@@ -15,7 +15,7 @@ var text=document.getElementById("srch").value;
 	if(text=="nucleus"||text=="Nucleus"){
 	window.location="nucleus.html";
 }
-	if(text=="endo plasmic reticulum"||text=="Endo plasmic reticulum"||text=="endo-plasmic-reticulum"||text=="Endo-plasmic-reticulum"||text=="endo"||text=="endo plasmic"||text=="endo-plasmic"||text=="Endo"||text=="Endo plasmic"||text=="Endo-plasmic"||text=="endoplasmicreticulum"||text=="Endoplasmicreticulum"){
+	if(text=="endo plasmic reticulum"||text=="Endo plasmic reticulum"||text=="endo-plasmic-reticulum"||text=="Endo-plasmic-reticulum"||text=="endo"||text=="endo plasmic"||text=="endo-plasmic"||text=="Endo"||text=="Endo plasmic"||text=="Endo-plasmic"||text=="endoplasmicreticulum"||text=="Endoplasmicreticulum"||text=="epr"||text=="Epr"){
 	window.location="epr.html";
 }
 	if(text=="largecentralvacuole"||text=="large central vacuole"||text=="Large central vacuole"){
