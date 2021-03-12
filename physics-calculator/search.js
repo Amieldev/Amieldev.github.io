@@ -2,7 +2,8 @@ function print(value){
 	document.write(value);
 }
 function srch(){
-var text=document.getElementById("srch").value;
+var text2=document.getElementById("srch").value;
+var text=text2.toLowerCase();
 	if(text=="density"||text=="Density"){
 	window.location="density.html";
 }

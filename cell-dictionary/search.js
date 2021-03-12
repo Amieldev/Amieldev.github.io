@@ -2,7 +2,8 @@ function print(value){
 	document.write(value);
 }
 function srch(){
-var text=document.getElementById("srch").value;
+var text2=document.getElementById("srch").value;
+var text=text2.toLowerCase();
 	if(text=="bio"||text=="Bio"||text=="biology"||text=="Biology"||text=="Bios"||text=="bios"||text=="bio-logy"||text=="Bio-logy"||text=="bio logy"||text=="Bio logy"){
 	window.location="bio.html";
 }

@@ -4,4 +4,3 @@ function quit(e){
 	window.location="index.html";
 }
 }
-btn.src=localStorage.img;
