@@ -13,40 +13,51 @@ h2{
 	width:300px;font-family:cursive;
 	font-size:30px;
 }
-div{
+#card{
 	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
 	width:300px;border-radius:40px;
 }
 .title{
 	background:linear-gradient(45deg,cyan,#08c0ff);
 	color:white;font-family:cursive;
-	width:300px;height:115px;font-size:40px;
-	border:3px solid silver;border-radius:20px;
+	height:70px;font-size:50px;
 	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+	width:100%;
+	position:fixed;
+	top:0%;
+}
+.nav1{
+	background-color:cyan;
+	width:50px;height:70px;
+	position:fixed;top:0%;left:0%;
 }
 </style>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=0.8, minimum-scale=1"/>
 	<title>Ami-Dev</title>
 </head>
 <body>
-<center>
-<h1 class="title">Ami-Dev<br>Projects</h1><br>
-</center>
+<br><br><br><br><br>
 <center>
 <a href="cell-dictionary/index.html">
-<div>
+<div id="card">
 <h2>Cell-Dictionary</h2>
 <img src="cell icon.png"/>
 </div>
 </a><br><br>
 <a href="physics-calculator/index.html">
-<div>
+<div id="card">
 <h2>Physics-Calculator</h2>
 <img src="physics icon.png"/>
 </div>
 </a>
 </center>
 <h4>©Amiel Sintayehu(Ami-Dev)</h4>
+
+<!-- This below is the code for the nav bar  -->
+<center>
+<div class="title">Ami-dev</div><br>
+</center>
+<div class="nav1"></div>
 </body>
 </html>
