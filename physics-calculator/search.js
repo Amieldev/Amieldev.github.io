@@ -4,20 +4,23 @@ function print(value){
 function srch(){
 var text2=document.getElementById("srch").value;
 var text=text2.toLowerCase();
-	if(text=="density"||text=="Density"){
+	if(text=="density"){
 	window.location="density.html";
 }
-	if(text=="speed"||text=="Speed"){
+	if(text=="speed"){
 	window.location="speed.html";
 }
-	if(text=="force"||text=="Force"){
+	if(text=="force"){
 	window.location="force.html";
 }
-	if(text=="Acceleration"||text=="acceleration"||text=="Accel"||text=="accel"){
+	if(text=="Acceleration"){
 	window.location="acceleration.html";
 }
-	if(text=="gravity"||text=="Gravity"){
+	if(text=="gravity"){
 	window.location="gravity.html";
+}
+	if(text=="pathagorean theorem"||text=="hypotenuse"){
+	window.location="hypo.html";
 }
 }
 function search(e){
