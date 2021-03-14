@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Physics-calculator</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body onkeypress="enter(event)">
+<center>
+<h1 style="font-size:90px;font-family:none;"><var>E</var>=<var>m</var><var>c</var><sup>2</sup></h1>
+</center>
+<center>
+<input type="number" id="m" placeholder="mass(kg)"/></br></br></br>
+<center>
+<button onclick="solve()">Calculate</button>
+</center>
+</center>
+<img src="reload.png" id="reload" onclick="reload()"/>
+</body>
+<script>
+function solve(){
+var mass=document.getElementById("m").value;
+var c=299792458;
+var result=parseFloat(mass)*(c*c)+" J";
+alert(result);
+};
+function reload(){
+	location.reload();
+};
+function enter(e){
+	if(e.keyCode==13){
+	slove();
+}
+}
+</script>
+</html>

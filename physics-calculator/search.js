@@ -22,6 +22,9 @@ var text=text2.toLowerCase();
 	if(text=="pathagorean theorem"||text=="hypotenuse"){
 	window.location="hypo.html";
 }
+	if(text=="e=mc2"||text=="mass energy equivalence"){
+	window.location="e=mc2.html";
+}
 }
 function search(e){
 	if(e.keyCode==13){
