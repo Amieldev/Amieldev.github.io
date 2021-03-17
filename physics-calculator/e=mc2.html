@@ -18,6 +18,11 @@
 <img src="reload.png" id="reload" onclick="reload()"/>
 </body>
 <script>
+function enter(e){
+	if(e.keyCode==13){
+	solve()
+}
+}
 function solve(){
 var mass=document.getElementById("m").value;
 var c=299792458;
@@ -27,10 +32,8 @@ alert(result);
 function reload(){
 	location.reload();
 };
-function enter(e){
-	if(e.keyCode==13){
-	slove();
-}
+function reload(){
+	location.reload();
 }
 </script>
 </html>
