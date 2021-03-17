@@ -19,7 +19,7 @@ var text=text2.toLowerCase();
 	if(text=="gravity"){
 	window.location="gravity.html";
 }
-	if(text=="pathagorean theorem"||text=="hypotenuse"){
+	if(text=="pythagorean theorem"||text=="hypotenuse"){
 	window.location="hypo.html";
 }
 	if(text=="e=mc2"||text=="mass energy equivalence"){
