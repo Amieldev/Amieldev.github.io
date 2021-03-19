@@ -13,7 +13,7 @@ var text=text2.toLowerCase();
 	if(text=="force"){
 	window.location="force.html";
 }
-	if(text=="Acceleration"){
+	if(text=="acceleration"){
 	window.location="acceleration.html";
 }
 	if(text=="gravity"){

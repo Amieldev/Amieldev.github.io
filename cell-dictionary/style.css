@@ -9,7 +9,7 @@ img{
 	width:400px;
 }
 .title{
-	background:linear-gradient(45deg,#00ff00,cyan);
+	background:linear-gradient(45deg,cyan,#00ff00);
 	width:350px;height:50px;
 	font-size:30px;font-family:cursive;color:white;
 	border:2px solid black;border-radius:20px;
@@ -26,18 +26,18 @@ img{
 }
 .sbox{
 	width:310px;border-radius:50px;height:45px;border:2px solid black;
-	background:linear-gradient(45deg,#00ff00,cyan);
+	background:linear-gradient(45deg,cyan,#00ff00);
 	box-shadow:2px 2px silver;
 }
 .name{
-	background:linear-gradient(45deg,#00ff00,cyan);
+	background:linear-gradient(45deg,cyan,#00ff00);
 	width:300px;height:50px;
 	font-size:30px;font-family:cursive;color:white;
 	border:2px solid black;border-radius:20px;
 	box-shadow:2px 2px silver;
 }
 .epr{
-	background:linear-gradient(45deg,#00ff00,cyan);
+	background:linear-gradient(45deg,cyan,#00ff00);
 	width:400px;height:50px;
 	font-size:30px;font-family:cursive;color:white;
 	border:2px solid black;border-radius:20px;

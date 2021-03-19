@@ -3,6 +3,7 @@ body{
 }
 input{
 	height:30px;
+	width:175px;
 }
 .density{
 	height:190px;
@@ -13,17 +14,17 @@ input{
 	width:70px;border-radius:50%;
 }
 #link{
-	border:4px solid #20c0ff;
-	background-color:#20c0ff;
+	border:4px solid orange;
 	width:300px;
 	border-radius:10px;
 }
 button{
 	border-radius:10px;
-    background: linear-gradient(-45deg,#0080ff,cyan);
+	background:linear-gradient(-45deg,#ff0066,orange);
 	width:175px;height:50px;
 	cursor:pointer;
 	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+	color:white;
 }
 input{
 	border-radius:10px; 

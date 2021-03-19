@@ -47,7 +47,7 @@ h4{
 	top:-10px;
 	color:white;
 	font-family:cursive;
-	transition:linear;
+	transition:linear 0.1s;
 	text-shadow:2px 2px #ff0066;
 }
 h4:hover{
