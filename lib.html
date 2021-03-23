@@ -3,20 +3,31 @@
 <link rel="shortcut icon" href="my logo.png"/>
 <link rel="stylesheet" type="text/css" href="index.css">
 <style>
-.api{
+.lib{
 	color:cyan;
 	font-size:25px;
 	position:fixed;
 	top:-20px;
 }
-.api:hover{
+.lib:hover{
 	color:cyan;
 }
-.soon{
-	font-size:100px;
-	text-shadow:5px 5px #ff0066;
-	font-family:cursive;
-	color:cyan;
+#title{
+	color:white;font-family:cursive;
+	text-shadow:2px 2px#ff0066;
+	width:350px;height:50px;
+	border-radius:20px;
+}
+#link{
+	background:linear-gradient(45deg,cyan,#08c0ff);
+	width:352px;
+	border-radius:20px;
+}
+.gravityf{
+	width:345px;
+	border:none;
+	background-color:white;
+	border-radius:20px;
 }
 </style>
 <head>
@@ -26,13 +37,19 @@
 <body>
 <br><br><br><br><br><br>
 <center>
-<h1 class="soon">Coming Soon</h1>
+<a href="gravity lib.html">
+<div id="link">
+<h1 id="title">Gravity Simulator</h1>
+<iframe src="gravity eg.html" class="gravityf"></iframe>
+</div>
+</a>
 </center>
+
 <!-- This is the nav bar -->
 <div class="nav">
 <h1 class="title">Ami-Dev</h1>
 <a href="index.html"><h4 class="pro">Projects</h4></a>
-<h4 class="api">APIs</h4>
+<h4 class="lib">Libraries</h4>
 <a href="dev.html"><h4 class="dev">Developer</h4></a>
 </div>
 <div class="hum">
@@ -44,7 +61,7 @@
 <br><br><br>
 <center>
  <a href="index.html"><h3>Projects</h3></a><br>
-<h3 style="color:cyan;">APIs</h3><br>
+<h3 style="color:cyan;">Libraries</h3><br>
 <a href="dev.html"><h3>Developer</h3></a>
 </center>
 </div>

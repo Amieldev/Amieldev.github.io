@@ -21,9 +21,31 @@ p{
 	transition:linear 0.2s;
 	cursor:pointer;
 }
+@keyframes spin{
+    from{transform:rotateY(0deg);}
+    to{transform:rotateY(360deg);}
+}
 .logo:hover{
 	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
 	width:210px;
+	animation:spin linear 1s infinite;
+}
+.contact{
+	font-family:none;
+	font-size:30px;
+	width:auto;
+	height:auto;
+}
+.phone{
+	text-decoration:auto;
+	font-family:none;
+	width:200px;height:70px;
+	color:white;
+	background:linear-gradient(45deg,greenyellow,#00ff00);
+	border-radius:20px;
+	font-size:25px;
+	border:3px solid black;
+	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
 }
 </style>
 <head>
@@ -37,16 +59,18 @@ p{
 </center>
 <center>
 <h1>Hi there!</h1>
-<p>My name is Amiel Sintayehu.</p> 
-<p>I am a self-tought app developer.</p>
+<p>My name is Amiel Sintayehu<br><br>
+I am a self tought Web/App Developer.
+</p>
+<h2 class="contact">Contact me:</h2>
+<a href="tel:0947742464"><button class="phone">Call me now</button></a>
 </center>
-
 
 <!-- This is the nav bar -->
 <div class="nav">
 <h1 class="title">Ami-Dev</h1>
 <a href="index.html"><h4 class="pro">Projects</h4></a>
-<a href="api.html"><h4 class="api">APIs</h4></a>
+<a href="lib.html"><h4 class="lib">Libraries</h4></a>
 <h4 class="dev">Developer</h4>
 </div>
 <div class="hum">
@@ -58,7 +82,7 @@ p{
 <br><br><br>
 <center>
 <a href="index.html"><h3>Projects</h3></a><br>
-<a href="api.html"><h3>APIs</h3></a><br>
+<a href="lib.html"><h3>Libraries</h3></a><br>
 <h3 style="color:cyan;">Developer</h3>
 </center>
 </div>
