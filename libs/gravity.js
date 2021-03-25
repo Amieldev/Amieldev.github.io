@@ -6,8 +6,8 @@ function gravity(element){
         var objectTop= parseInt(window.getComputedStyle(object).getPropertyValue("top"));
         var objectHeight= parseInt(window.getComputedStyle(object).getPropertyValue("height"));
         var objectY=objectTop+objectHeight;
-        var TotalHeight=parseInt(window.innerHeight);
-        if(objectY<=TotalHeight){
+        var TotalHeight=parseInt(window.innerHeight)-10;
+        if(objectY<TotalHeight){
         object.style.top = (objectTop+3)+"px";
         }
     },9)

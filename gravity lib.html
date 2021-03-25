@@ -26,21 +26,27 @@ P{
 	background:linear-gradient(45deg,cyan,#08c0ff);
 }
 .code{
-    background-color:#3d3d3d;
-    color:white;
-    border-radius:20px;
-	font-family:none;
-	width:80%;
-	font-size:20px;
+    border-radius:10px;
+	width:350px;
 }
 .eg{
 	width:350px;
 	height:250px;
 	border-radius:20px;
 }
+#link{
+	width:90%;
+	font-size:20px;
+    color:white;
+    background-color:#3d3d3d;
+	font-family:none;
+    border-radius:10px;
+	font-family: monospace;
+}
 @media (orientation:portrait){
 #link{
 	width:100%;
+	font-family:none;
 }
 }
 </style>
@@ -55,7 +61,7 @@ P{
 <p>First copy the script element found below,</p>
 <p>Then paste it in your html file.(above the place you want to use the library)</p>
 
-<h2 class="code" id="link"><<tag->script &nbsp;</tag-><attribute->src</attribute->=<string->"amieldev.github.io/libs/gravity.js"</string->> < /<tag->script</tag->></h2>
+<h2 id="link"><<tag->script &nbsp;</tag-><attribute->src</attribute->=<string->"amieldev.github.io/libs/gravity.js"</string->>< /<tag->script</tag->></h2>
 
 </center>
 <hr><br>
@@ -68,11 +74,11 @@ The the gravity function will make any element with the same name,class or id wi
 </p>
 <h1>Example:</h1><br>
 <h1>Html</h1>
-<h1 class="code"><<tag->img&nbsp;</tag->&nbsp;<attribute->src</attribute->=<string->"my logo.png"&nbsp;&nbsp;</string-><attribute->id</attribute->=<string->"mylogo"</string->/></h1>
+<img src="gravity eg html.png" class="code"/>
 <h1>Css</h1>
-<h1 class="code"><selector->#mylogo</selector->{<br><propertie->width</propertie->:<value->50px</value->;<br><propertie->height</propertie->:<value->50px</value->;<br><propertie->border-radius</propertie->:<value->50%</value->;<br>}</h1>
+<img src="gravity eg css.png" class="code"/>
 <h1>Java-script</h1>
-<h1 class="code"><function->gravity</function->(<string->"#mylogo"</string->)</h1>
+<img src="gravity eg js.png" class="code"/>
 <h1>Result:</h1>
 <iframe src="gravity eg.html" class="eg"></iframe>
 </center>

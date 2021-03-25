@@ -20,15 +20,12 @@ p{
 	border-radius:50%;width:200px;
 	transition:linear 0.2s;
 	cursor:pointer;
+	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+	animation:spin linear 1s infinite;
 }
 @keyframes spin{
     from{transform:rotateY(0deg);}
     to{transform:rotateY(360deg);}
-}
-.logo:hover{
-	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
-	width:210px;
-	animation:spin linear 1s infinite;
 }
 .contact{
 	font-family:none;
