@@ -8,6 +8,12 @@ html{overflow:hidden;}
 body{
 	background-size:cover;
 	background-repeat:none;
+	background-image:url("pc-bg.jpg");
+}
+@media (orientation:portrait){
+body{
+	background-image:url("m-bg.jpg");
+}
 }
 </style>
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -40,17 +46,6 @@ body{
 </center>
 <h4 style="position:absolute;bottom:0%;right:0%;color:white;">©Amiel Sintayehu(Ami-Dev)</h4>
 </body>
-<script>
-var body=document.querySelector("body");
-setInterval(function(){
-	if(window.innerWidth>window.innerHeight){
-	body.style.backgroundImage="url('pc-bg.jpg')";
-}
-	if(window.innerWidth<window.innerHeight){
-	body.style.backgroundImage="url('m-bg.jpg')";
-}
-},10)
-</script>
 <script src="search.js"></script>
 <script src="bg.js"></script>
 </html>
