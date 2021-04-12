@@ -2,7 +2,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1">
     <title>Gravity Simulator Example</title>
-<script src="libs/gravity.js"></script>
+<script src="libs/drag.js"></script>
 <style>
 #mylogo{
     width:50px;
@@ -12,12 +12,12 @@
 </style>
 </head>
 <body>
+    <center>
+    <h1 style="color:#ff0066;">Drag me!</h1>
+    </center>
 <img src="my logo.png" id="mylogo"/>
 </body>
 <script>
-    gravity("#mylogo");
-setInterval(function(){
-    location.reload();
-},2000)
+Drag("#mylogo");
 </script>
 </html>
