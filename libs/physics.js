@@ -21,3 +21,5 @@ function e_mc2(mass){
     var c=299792458;
     console.log(parseFloat(mass)*(c*c));
 }
+
+//Copyright© Amiel Sintayehu(Ami-Dev)

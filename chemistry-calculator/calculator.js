@@ -49,6 +49,32 @@ if(e1==""||e2==""||v1s==""||v2s==""){
 }
 }
 
+
+setInterval(()=>{
+    if(e1.value=="Na"||e1.value=="K"||e1.value=="Ag"||e1.value=="Li"||e1.value=="H"){
+        v1.value=1;
+    }
+    if(e2.value=="Cl"||e2.value=="Br"||e2.value=="I"){
+        v2.value=-1;
+    }
+    if(e1.value=="Ca"||e1.value=="Mg"||e1.value=="Fe"||e1.value=="Zn"){
+        v1.value=2;
+    }
+    if(e2.value=="O"||e2.value=="S"){
+        v2.value=-2;
+    }
+    if(e1.value=="Al"||e1.value=="Fe"||e1.value=="Cr"){
+        v1.value=3;
+    }
+    if(e2.value=="N"||e2.value=="P"){
+        v2.value=-3;
+    }
+
+},10)
+
+
+
+
 function clearOut(){
     e1.value="";
     e2.value="";

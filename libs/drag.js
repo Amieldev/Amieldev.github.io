@@ -24,3 +24,5 @@ document.onmousemove=function(e){
     drag.style.top=y+"px";
     drag.style.left=x+"px";
 }
+
+//Copyright© Amiel Sintayehu(Ami-Dev)

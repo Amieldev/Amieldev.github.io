@@ -12,3 +12,5 @@ function gravity(element){
         }
     },9)
 }
+
+//Copyright© Amiel Sintayehu(Ami-Dev)

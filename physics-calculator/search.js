@@ -25,6 +25,9 @@ var text=text2.toLowerCase();
 	if(text=="e=mc2"||text=="mass energy equivalence"){
 	window.location="e=mc2.html";
 }
+	if(text=="work"){
+	window.location="work.html";
+}
 }
 function search(e){
 	if(e.keyCode==13){
