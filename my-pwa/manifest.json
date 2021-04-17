@@ -7,13 +7,13 @@
     "display":"standalone",
     "icons":[
         {
-            "src":"icon.png",
-            "sizes":"544x543",
+            "src":"icon192.png",
+            "sizes":"192x192",
             "type":"image/png"
         },
         {
-            "src":"icon2.png",
-            "sizes":"421x423",
+            "src":"icon512.png",
+            "sizes":"512x512",
             "type":"image/png"
         }
     ]
