@@ -1,7 +1,7 @@
 {
     "name":"Amieldev.github.io",
     "short_name":"Ami-Dev",
-    "start_url":"*",
+    "start_url":".",
     "background-color":"#3d3d3d",
     "theme-color":"#00ff00",
     "display":"standalone",
