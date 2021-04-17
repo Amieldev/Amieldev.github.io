@@ -1,0 +1,20 @@
+{
+    "name":"Amieldev.github.io",
+    "short_name":"Ami-Dev",
+    "start_url":"*",
+    "background-color":"#3d3d3d",
+    "theme-color":"#00ff00",
+    "display":"standalone",
+    "icons":[
+        {
+            "src":"icon.png",
+            "sizes":"544x543",
+            "type":"image/png"
+        },
+        {
+            "src":"icon2.png",
+            "sizes":"421x423",
+            "type":"image/png"
+        }
+    ]
+}
