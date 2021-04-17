@@ -57,8 +57,9 @@ h4:hover{
 	cursor:pointer;
 }
 .hum{
-	position:fixed;top:5px;
+	position:fixed;top:10px;
 	font-size:30px;
+	border-radius:0px;
 	width:50px;
 	cursor:pointer;
 }
