@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" href="my logo.png"/>
+<link rel="stylesheet" type="text/css" href="index.css">
+<script src="syntax.js"></script>
+<style>
+.lib{
+	color:cyan;
+	font-size:25px;
+	position:fixed;
+	top:-20px;
+}
+.lib:hover{
+	color:orange;
+}
+P{
+    font-size:20px;
+    margin:20px;
+}
+.bold{
+	color:white;font-family:cursive;
+	text-shadow:2px 2px#ff0066;
+	border:2px solid silver;
+	width:340px;height:50px;
+	border-radius:20px;
+	background:linear-gradient(45deg,cyan,#08c0ff);
+}
+.code{
+    border-radius:10px;
+	width:500px;
+}
+@media(orientation:portrait){
+.code{
+    width:350px;
+}
+}
+.eg{
+	width:350px;
+	height:250px;
+	border-radius:20px;
+}
+#link{
+	width:90%;
+	font-size:20px;
+    color:white;
+    background-color:#3d3d3d;
+	font-family:none;
+    border-radius:10px;
+	font-family: monospace;
+}
+@media (orientation:portrait){
+#link{
+	width:100%;
+	font-family:none;
+}
+}
+</style>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0.8, minimum-scale=1"/>
+	<title>Ami-Dev</title>
+</head>
+<body>
+<br><br><br><br><br><br>
+<center>
+<h1 class="bold">How to Set-Up</h1>
+<p>First copy the link found below,</p>
+<p>Then paste it in your script src attribute.</p>
+<h1 id="link"><string->https://amieldev.github.io/libs/css-positioner.js</string-></h1>
+
+<h1 class="bold">How to Use</h1>
+
+<p>After linking the library you will see a form box that asks for the element's class/id and a submit button<br><br>
+All you have to do is just type the element's class or id name and select class or id and click Done.<br><br>
+Then you will be able to drag and move the element around,while you do that the top and left position of the element would be showing up in the boxes.<br><br>
+Once you diside where the element should be just copy the css format in the box and paste it in your css code.<br><br>
+<tag->Note</tag->:<string->This library does not work for position relative</string->.</p>
+
+
+<h1>Example:</h1>
+
+<img src="cssp.png" class="code"/>
+<h1>Result:</h1>
+<img src="csp.gif" class="code"/>
+
+</center>
+
+<!-- This is the nav bar -->
+<div class="nav">
+<h1 class="title">Ami-Dev</h1>
+<a href="index.html"><h4 class="pro">Projects</h4></a>
+<a href="lib.html"><h4 class="lib">Libraries</h4></a>
+<a href="dev.html"><h4 class="dev">Developer</h4></a>
+</div>
+<div class="hum">
+<img src="hum.png" class="hum"/>
+	</div>
+
+<div class="slide1">
+<button id="x">x</button>
+<br><br><br>
+<center>
+<a href="index.html"><h3>Projects</h3></a><br>
+<a href="lib.html" style="color:cyan;"><h3>Libraries</h3></a><br>
+<a href="dev.html"><h3>Developer</h3></a>
+</center>
+</div>
+<!-- The above is the nav bar -->
+<h3>©Amiel-Sintayehu(Ami-Dev)</h3>
+</body>
+<script src="index.js"></script>
+</html>
