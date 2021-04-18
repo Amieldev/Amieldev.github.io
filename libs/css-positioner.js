@@ -189,7 +189,7 @@ setTimeout(() => {
         leftValueBox.value=window.getComputedStyle(document.querySelector(Elm)).getPropertyValue("left");
     },10)
     setInterval(function(){
-        csscode.innerHTML="<p>top:"+window.getComputedStyle(document.querySelector(Elm)).getPropertyValue("top")+";<br>left:"+window.getComputedStyle(document.querySelector(Elm)).getPropertyValue("left")+";</p>";
+        csscode.innerHTML="<p>position:absolute;<br>top:"+window.getComputedStyle(document.querySelector(Elm)).getPropertyValue("top")+";<br>left:"+window.getComputedStyle(document.querySelector(Elm)).getPropertyValue("left")+";</p>";
     },10)
     }        
 },2000);
