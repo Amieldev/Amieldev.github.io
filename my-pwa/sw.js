@@ -1,6 +1,10 @@
 self.addEventListener("install",e=>{
-    console.log("Install!");
+    e.waitUntil(
+        caches.open("static").then(cache=>{
+            return cache.addAll(["logo192.png"])
+        })
+    )
 });
 self.addEventListener("fetch",e=>{
-    console.log("It has Fetch!");
+    console.log(`Fetch request for:${e.request.url}`);
 })
