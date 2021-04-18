@@ -19,8 +19,23 @@
 </style>
 <body>
 <center>
-    <div class="ball"></div>
+    <div class="ball" onclick="red()"></div>
 </center>
 </body>
 <script src="index.js"></script>
+<script>
+const ball=document.querySelector(".ball");
+function red(){
+    ball.style.background="linear-gradient(45deg,#ff0066,orange)";
+    ball.onclick=()=>{
+        green();
+    }
+}
+function green(){
+    ball.style.background="linear-gradient(45deg,cyan,#00ff00)";
+    ball.onclick=()=>{
+        red();
+}
+}
+</script>
 </html>
