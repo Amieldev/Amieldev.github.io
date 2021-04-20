@@ -1,9 +1,9 @@
 {
-    "name":"Amieldev.github.io",
-    "short_name":"Ami-Dev",
+    "name":"Cell-Dictionary",
+    "short_name":"Cell Dictionary",
     "start_url":".",
-    "background_color":"#ff0066",
-    "theme_color":"#ff0066",
+    "background_color":"#00ff00",
+    "theme_color":"#00ff00",
     "display":"standalone",
     "icons":[
         {
