@@ -17,31 +17,46 @@ var v2s=document.getElementById("valence2").value;
 if(Math.abs(v1)==Math.abs(v2)){
     value.innerHTML=e1+e2;
 }
-if(Math.abs(v1)!=Math.abs(v2)&&Math.abs(v1)%Math.abs(v2)==0){
-    var v_no=v1/v2
-    value.innerHTML=e1+e2+"<sub>"+Math.abs(v_no)+"</sub>";
-}
-if(Math.abs(v1)!=Math.abs(v2)&&Math.abs(v2)%Math.abs(v1)==0){
-    var v_no=v2/v1
-    value.innerHTML=e1+"<sub>"+Math.abs(v_no)+"</sub>"+e2;
-}
-if(Math.abs(v1)!=Math.abs(v2)&&Math.abs(v2)%Math.abs(v1)!=0){
-    var v_no1=Math.abs(v1);
-    var v_no2=Math.abs(v2);
-    value.innerHTML=e1+"<sub>"+v_no2+"</sub>"+e2+"<sub>"+v_no1+"</sub>";
+
+
+
+//Finding the HCF of the two element's valence noumbers
+
+let hcf;
+
+for (let i = 1; i <= Math.abs(v1) && i <= Math.abs(v2); i++) {
+
+    if( Math.abs(v1) % i == 0 && Math.abs(v2) % i == 0) {
+        hcf = i;
+    }
 }
 
-if(Math.abs(v1)!=Math.abs(v2)&&Math.abs(v2)%Math.abs(v1)!=0 && Math.abs(v2)==1){
-    var v_no1=Math.abs(v1);
-    var v_no2=Math.abs(v2);
-    value.innerHTML=e1+e2+"<sub>"+v_no1+"</sub>";
+
+var sub1=Math.abs(v1)/hcf;
+var sub2=Math.abs(v2)/hcf;
+
+
+
+if(sub1==1){
+    value.innerHTML=e1+"<sub>"+sub2+"</sub>"+e2;
 }
 
-if(Math.abs(v1)!=Math.abs(v2)&&Math.abs(v2)%Math.abs(v1)!=0 && Math.abs(v1)==1){
-    var v_no1=Math.abs(v1);
-    var v_no2=Math.abs(v2);
-    value.innerHTML=e1+"<sub>"+v_no2+"</sub>"+e2;
+if(sub2==1){
+    value.innerHTML=e1+e2+"<sub>"+sub1+"</sub>";
 }
+
+if(sub1==1&&sub2==1){
+    value.innerHTML=e1+e2;
+}
+
+if(sub1!=1&&sub2!=1){
+    value.innerHTML=e1+"<sub>"+sub2+"</sub>"+e2+"<sub>"+sub1+"</sub>";
+
+}
+
+
+
+
 
 if(e1==""||e2==""||v1s==""||v2s==""){
     alert("You did't put all the required values");
