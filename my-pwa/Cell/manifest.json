@@ -2,8 +2,13 @@
     "name":"Cell-Dictionary",
     "short_name":"Cell Dictionary",
     "start_url":".",
+<<<<<<< HEAD:pwa/Cell/manifest.json
     "background_color":"#6dcdb1",
     "theme_color":"#009578",
+=======
+    "background_color":"#00ff00",
+    "theme_color":"#00ff00",
+>>>>>>> parent of d68d1cb (PWA Fix):my-pwa/Cell/manifest.json
     "display":"standalone",
     "icons":[
         {
