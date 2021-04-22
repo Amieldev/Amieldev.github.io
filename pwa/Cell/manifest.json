@@ -2,7 +2,7 @@
     "name":"Cell-Dictionary",
     "short_name":"Cell Dictionary",
     "start_url":".",
-    "background_color":"#6dcb1",
+    "background_color":"#6dcdb1",
     "theme_color":"#009578",
     "display":"standalone",
     "icons":[
