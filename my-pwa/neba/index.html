@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Nebiyou Elias</title>
+
+
+    <meta name="theme-color" content="cyan"/>
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="apple-touch-icon" href="logo192.png"/>
+    <link rel="shortcut icon" href="logo192.png"/>
+    <script src="index.js" defer></script>    
+
+
+</head>
+<body>
+<audio src="old town.mp3" class="music"></audio>
+
+<center>
+<img src="style.jpg" class="logo"/>
+</center>
+<center>
+    <h1 class="title">Nebiyou Elias</h1>
+</center>
+<button class="play">Play</button>
+</body>
+<script>
+const music=document.querySelector(".music");
+const btn=document.querySelector(".play");
+btn.onclick=()=>{
+    music.play();
+btn.classList.add("blip");
+}
+</script>
+</html>

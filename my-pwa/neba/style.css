@@ -1,0 +1,53 @@
+body{
+    background-image:url("marsh.jpg");
+    background-size:cover;
+}
+@keyframes  pop{
+    from{
+        width:200px;height:200px;
+        border-color:orangered
+    }
+    50%{
+        width:250px;height:250px;
+        border-color:cyan;
+    }
+    to{
+        width:200px;height:200px;
+        border-color:#00ff00;
+    }
+}
+@keyframes spin{
+    from{background-color:#ff0066;transform: rotateY(0deg);}
+    50%{background-color:cyan;transform: rotateY(360deg);}
+    to{background-color:#00ff00;transform: rotateY(0deg);}
+}
+@keyframes plip{
+    from{
+        background:linear-gradient(45deg,cyan,#00ff00);
+    }
+    50%{
+        background:linear-gradient(45deg,orange,#ff0066);
+    }
+    to{
+        background:linear-gradient(45deg,cyan,#08c0ff);
+    }
+}
+.logo{
+    width:200px;height:200px;
+    border-radius:50%;border:10px solid orangered;
+    animation:pop 0.5s linear infinite;
+}
+.title{
+    background-color:red;
+    text-align:center;animation:spin linear 2.5s infinite;border-radius:20px;
+    font-size:48px;color:white;font-family:cursive;text-shadow:2px 2px grey;
+}
+.play{
+    width:200px;height:70px;
+    background:linear-gradient(45deg,orange,#ff0066);color:white;font-size:20px;
+    border:none;border-radius:20px;
+    position: fixed;bottom:100px;left:25%;
+}
+.blip{
+    animation:plip linear 1s infinite;
+}
