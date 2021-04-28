@@ -3,7 +3,7 @@
     "short_name":"Physics calculator",
     "start_url":".",
     "background_color":"#ffc040",
-    "theme_color":"#ffc040",
+    "theme_color":"orange",
     "display":"standalone",
     "icons":[
         {

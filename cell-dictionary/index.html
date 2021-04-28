@@ -2,7 +2,7 @@
 <html onkeypress="search(event)">
 <head>
 <link rel="shortcut icon" type="image/png" href="logo.png"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1"/>
 
 
 <meta name="theme-color" content="#009578"/>
@@ -14,11 +14,12 @@
 
 
 <style>
-html{overflow:hidden;}
+body{overflow-x:hidden;}
 body{
 	background-size:cover;
 	background-repeat:none;
 	background-image:url("pc-bg.jpg");
+	margin:0px;
 }
 @media (orientation:portrait){
 body{
@@ -30,9 +31,7 @@ body{
 	<title>Cell-Dictionary</title>
 </head>
 <body>
-<center>
-<button class="title" class="theme" id="theme">Cell-Dictionary</button><br><br><br><br>
-</center>
+<br><br><br><br><br><br>
 <center>
 <div class="sbox" id="theme">
 <input type="text" id="srch" list="d_list" placeholder="Type to search..."/><img src="search.png" class="btn" onclick="srch()"/>
@@ -54,6 +53,14 @@ body{
 </datalist>
 </div>
 </center>
+
+<!--Nav-Bar-->
+
+	<button class="nav" class="theme" id="theme">Cell-Dictionary</button><br><br><br><br>
+
+<!--Nav-Bar-->
+
+
 <h4 style="position:absolute;bottom:0%;right:0%;color:white;">©Amiel Sintayehu(Ami-Dev)</h4>
 </body>
 <script src="search.js"></script>

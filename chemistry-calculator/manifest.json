@@ -3,7 +3,7 @@
     "short_name":"Chemistry calculator",
     "start_url":".",
     "background_color":"cyan",
-    "theme_color":"cyan",
+    "theme_color":"#08c0ff",
     "display":"standalone",
     "icons":[
         {
