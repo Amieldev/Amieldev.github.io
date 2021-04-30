@@ -24,6 +24,7 @@ img{
 	border:none;
 	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
 	position: fixed;top:0px;
+	text-align: center;
 }
 .back{
 	width:30px;
