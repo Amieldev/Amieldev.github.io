@@ -19,11 +19,64 @@ body{
 	background-size:cover;
 	background-repeat:none;
 	background-image:url("pc-bg.jpg");
-	margin:0px;
+}
+a{
+	text-decoration: none;
 }
 @media (orientation:portrait){
 body{
 	background-image:url("m-bg.jpg");
+}
+}
+.hum{
+	width:30px;
+	position:fixed;
+	top:15px;left:10px;
+	background:transparent;
+}
+.sideBar{
+	width:200px;height:100%;
+	background-color:white;border-right:3px solid #00ff00;
+	position: fixed;top:0px;left:-100%;
+	transition: linear 0.3s;
+}
+.sideBarActive{
+	width:200px;height:100%;
+	background-color:white;border-right:3px solid #00ff00;
+	position:fixed;top:0px;left:0px;
+}
+.x{
+	width:40px;position: absolute;top:10px;left:10px;
+}
+.settingIcon{
+	width:25px;height:25px;
+	position: absolute;top:200px;left:20px;
+}
+.settingTxt{
+	position: absolute;top:185px;left:55px;
+	color:black;
+}
+.settingTxt:hover{
+	color:orange;
+}
+.privacyIcon{
+	width:25px;height:25px;
+	position: absolute;top:270px;left:20px;
+}
+.privacyTxt{
+	position: absolute;top:255px;left:55px;
+	color:black;
+}
+.privacyTxt:hover{
+	color:orange;
+}
+#light-dark{
+	width:50px;height:50px;border-radius:50%;border:3px solid silver;
+	position: absolute;top:10px;right:20px;
+}
+@media (orientation:portrait){
+.sideBar{
+	width:60%;
 }
 }
 </style>
@@ -54,15 +107,41 @@ body{
 </div>
 </center>
 
-<!--Nav-Bar-->
-
-	<button class="nav" class="theme" id="theme">Cell-Dictionary</button><br><br><br><br>
-
-<!--Nav-Bar-->
-
-
 <h4 style="position:absolute;bottom:0%;right:0%;color:white;">©Amiel Sintayehu(Ami-Dev)</h4>
+
+
+<!--Nav-Bar-->
+	<button class="nav" class="theme" id="theme">Cell-Dictionary</button><br><br><br><br>
+	<img src="hum.png" class="hum"/>
+<!--Nav-Bar-->
+
+
+<!--Side-Bar-->
+<div class="sideBar">
+	<img src="x.png" class="x"/>
+	<img src="sun-moon.png" id="light-dark"/>
+	<a href="setting.html"><div><img src="setting.png" class="settingIcon"/><h4 class="settingTxt">setting</h4></div></a>
+	<a href="privacy.html"><div><img src="privacy.png" class="privacyIcon"/><h4 class="privacyTxt">privacy policy</h4></div></a>
+</div>
+<!--Side-Bar-->
+
+
+
+
 </body>
+<script>
+const hum=document.querySelector(".hum");
+const xBtn=document.querySelector(".x");
+const menu=document.querySelector(".sideBar");
+
+hum.onclick=()=>{
+	menu.classList.add("sideBarActive");
+}
+xBtn.onclick=()=>{
+	menu.classList.remove("sideBarActive");
+}
+
+</script>
 <script src="search.js"></script>
 <script src="bg.js"></script>
 </html>

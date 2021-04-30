@@ -1,5 +1,14 @@
 body{
 	background-color:white;
+	margin:0px;
+}
+.light{
+	color:black;
+	background-color:white;
+}
+.dark{
+	color:white;
+	background-color:#3d3d3d;
 }
 html{overflow-x:hidden;}
 p{
@@ -15,6 +24,12 @@ img{
 	border:none;
 	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
 	position: fixed;top:0px;
+}
+.back{
+	width:30px;
+	position:fixed;
+	top:15px;left:10px;
+	background:transparent;	
 }
 #srch{
 	width:250px;height:30px;
