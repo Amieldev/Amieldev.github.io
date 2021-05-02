@@ -19,15 +19,63 @@ body{
 	overflow-x: hidden;
 }
 .nav{
-	font-size:30px;
-	background:linear-gradient(-45deg,#ff0066,orange);
+	background:linear-gradient(45deg,#ff0066,orange);
+	width:100%;height:60px;
+	font-size:30px;font-family:cursive;color:white;
 	border:none;border-radius:0px;
-	width:100%;height:70px;
 	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
-	color:white;
-	text-shadow:3px 3px black;
-	position: fixed;top:0px;left:0px;
+	position: fixed;top:0px;
+	text-align: center;
 }
+
+.hum{
+	width:30px;
+	position:fixed;
+	top:15px;left:10px;
+	background:transparent;
+}
+.sideBar{
+	width:200px;height:100%;border-radius:0px;
+	background:white;border-right:3px solid orange;border:none;border-right:3px solid orange;
+
+	position: fixed;top:0px;left:-100%;
+	transition: linear 0.3s;
+}
+.sideBarActive{
+	width:200px;height:100%;
+	position:fixed;top:0px;left:0px;
+}
+.x{
+	width:40px;position: absolute;top:10px;left:10px;
+}
+.settingIcon{
+	width:25px;height:25px;
+	position: absolute;top:200px;left:20px;
+}
+.settingTxt{
+	position: absolute;top:185px;left:55px;
+	color:black;
+}
+.settingTxt:hover{
+	color:orange;
+}
+.privacyIcon{
+	width:25px;height:25px;
+	position: absolute;top:270px;left:20px;
+}
+.privacyTxt{
+	position: absolute;top:255px;left:55px;
+	color:black;
+}
+.privacyTxt:hover{
+	color:orange;
+}
+
+
+
+
+
+
 #srch{
 	width:250px;height:30px;
 	border-radius:20px;
@@ -77,47 +125,70 @@ div{
 <center>
 <div>
 	<h1>Density</h1>
-	<a href="density.html"/><img src="dense.png" class="density" id="link"/></a>
+	<a href="density.html"><img src="dense.png" class="density" id="link"/></a>
 </div><br><br>
 <div>
 	<h1>Speed</h1>
-	<a href="speed.html"/><img src="speed icon.jpg" class="speed" id="link"/></a>
+	<a href="speed.html"><img src="speed icon.jpg" class="speed" id="link"/></a>
 </div><br><br>
 <div>
 	<h1>Force</h1>
-	<a href="force.html"/><img src="force.jpg" class="force" id="link" /></a>
+	<a href="force.html"><img src="force.jpg" class="force" id="link" /></a>
 </div><br><br>
 <div>
 	<h1>Work</h1>
-	<a href="work.html"/><img src="work.png" class="work" id="link" style="background:linear-gradient(45deg,#08c0ff,cyan);"/></a>
+	<a href="work.html"><img src="work.png" class="work" id="link" style="background:linear-gradient(45deg,#08c0ff,cyan);"/></a>
 </div><br><br>
 <div>
 	<h1>Acceleration</h1>
-	<a href="acceleration.html"/><img src="blur car.jpg" class="acceleration" id="link"/></a>
+	<a href="acceleration.html"><img src="blur car.jpg" class="acceleration" id="link"/></a>
 </div><br><br>
 <div>
 	<h1>Gravitational force</h1>
-	<a href="gravity.html"/><img src="grav.jpg" class="gravity" id="link"/></a>
+	<a href="gravity.html"><img src="grav.jpg" class="gravity" id="link"/></a>
 </div><br><br>
 <div>
 	<h1>Pythagorean theorem</h1>
-	<a href="hypo.html"/><img src="hypo.png" class="hypo" id="link"/></a>
+	<a href="hypo.html"><img src="hypo.png" class="hypo" id="link"/></a>
 </div><br><br>
 <div>
 	<h1>Mass-Energy equivalence</h1>
-	<a href="e=mc2.html"/><img src="e=mc2.jpg" class="emc" id="link"/></a>
+	<a href="e=mc2.html"><img src="e=mc2.jpg" class="emc" id="link"/></a>
 </div>
 </center>
-
-
-<!--Nav-Bar-->
-<center>
-	<button class="nav">Physics calculator</button><br>
-	</center>
-	<!--Nav-Bar-->
 	
 
 <h4 style="font-family:none;">©Amiel Sintayehu(Ami-Dev)</h4>
+
+
+<!--Nav-Bar-->
+<div class="nav" class="theme">Physics-calculator</div><br><br><br><br>
+<img src="hum.png" class="hum"/>
+<!--Nav-Bar-->
+
+
+<!--Side-Bar-->
+<div class="sideBar">
+<img src="x.png" class="x"/>
+<a href="setting.html"><img src="setting.png" class="settingIcon"/><h4 class="settingTxt">setting</h4></a>
+<a href="privacy.html"><img src="privacy.png" class="privacyIcon"/><h4 class="privacyTxt">privacy policy</h4></a>
+</div>
+<!--Side-Bar-->
+
+
 </body>
+<script>
+const hum=document.querySelector(".hum");
+const xBtn=document.querySelector(".x");
+const menu=document.querySelector(".sideBar");
+
+hum.onclick=()=>{
+	menu.classList.add("sideBarActive");
+}
+xBtn.onclick=()=>{
+	menu.classList.remove("sideBarActive");
+}
+
+</script>
 <script src="search.js"></script>
 </html>

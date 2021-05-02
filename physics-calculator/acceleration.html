@@ -11,6 +11,8 @@ button{
 <title>Physics-calculator</title>
 </head>
 <body onkeypress="enter(event)">
+	<br><br><br><br>
+
 <center>
 <img src="acceleration.png" width="300px"/>
 </center>
@@ -21,6 +23,8 @@ button{
 <button onclick="solve()">Calculate</button>
 </center>
 <img src="reload.png" id="reload" onclick="reload()"/>
+
+<nav-bar title="Acceleration"></nav-bar>
 </body>
 <script>
 function solve(){
@@ -40,4 +44,5 @@ function reload(){
 	location.reload();
 };
 </script>
+<script src="main.js"></script>
 </html>

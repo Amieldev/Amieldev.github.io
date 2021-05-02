@@ -1,5 +1,6 @@
 body{
 	font-family:cursive;
+	margin:0px;
 }
 input{
 	height:30px;
@@ -11,7 +12,7 @@ input{
 #reload{
 	position:absolute;
 	bottom:15px;right:10px;
-	width:70px;border-radius:50%;
+	width:50px;border-radius:50%;border:3px 3px silver;
 }
 #link{
 	border:4px solid orange;
