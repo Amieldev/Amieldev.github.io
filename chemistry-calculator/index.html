@@ -17,9 +17,7 @@
 
 </head>
 <body>
-<center>
-    <button class="title">Chemistry-Calculator</button>
-</center>
+
 <center>
     <img src="atom btn2.png" class="start" onclick="start()"/>
 </center><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -27,6 +25,88 @@
     <h2 class="clickto">Click the button to start!</h2>
 </center>
 <h4 class="cright">©Amiel-Sintayehu(Ami-Dev)</h4>
+
+
+
+
+<style>
+    .nav{
+        background:linear-gradient(45deg,#08c0ff,cyan);
+        width:100%;height:60px;
+        font-size:25px;font-family:cursive;color:white;
+        border:none;border-radius:0px;
+        box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+        position: fixed;top:0px;
+        text-align: center;
+    }
+    
+    .hum{
+        width:30px;
+        position:fixed;
+        top:15px;left:10px;
+        background:transparent;
+    }
+    .sideBar{
+        width:200px;height:100%;border-radius:0px;font-family: none;
+        background:white;border-right:3px solid orange;border:none;border-right:3px solid #08c0ff;
+    
+        position: fixed;top:0px;left:-100%;
+        transition: linear 0.3s;
+    }
+    .sideBarActive{
+        width:200px;height:100%;
+        position:fixed;top:0px;left:0px;
+    }
+    .x{
+        width:50px;position: absolute;top:10px;left:10px;
+        border-radius:50%;border:2px solid silver;
+    }
+    .settingIcon{
+        width:25px;height:25px;
+        position: absolute;top:200px;left:20px;
+    }
+    .settingTxt{
+        position: absolute;top:185px;left:55px;
+        color:black;
+    }
+    .settingTxt:hover{
+        color:orange;
+    }
+    .privacyIcon{
+        width:25px;height:25px;
+        position: absolute;top:270px;left:20px;
+    }
+    .privacyTxt{
+        position: absolute;top:255px;left:55px;
+        color:black;
+    }
+    .privacyTxt:hover{
+        color:orange;
+    }
+    
+    </style>
+
+
+    <!--Nav-Bar-->
+    <div class="nav">Chemistry-Calculator</div><br><br><br><br>
+    <img src="hum.png" class="hum"/>
+    <!--Nav-Bar-->
+    
+    
+    <!--Side-Bar-->
+    <div class="sideBar">
+    <img src="x.png" class="x"/>
+    <a href="setting.html"><img src="setting.png" class="settingIcon"/><h4 class="settingTxt">setting</h4></a>
+    <a href="privacy.html"><img src="privacy.png" class="privacyIcon"/><h4 class="privacyTxt">privacy policy</h4></a>
+    </div>
+    <!--Side-Bar-->
+
+
+
+
+
+
+
 </body>
 <script>
 var start=document.querySelector(".start");
@@ -39,5 +119,19 @@ start.classList.remove("spin");
     window.location="calculator.html";
 },1300)
 }
+
+
+const hum=document.querySelector(".hum");
+const xBtn=document.querySelector(".x");
+const menu=document.querySelector(".sideBar");
+
+hum.onclick=()=>{
+	menu.classList.add("sideBarActive");
+}
+xBtn.onclick=()=>{
+	menu.classList.remove("sideBarActive");
+}
+
 </script>
+<script src="main.js"></script>
 </html>
