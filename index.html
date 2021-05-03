@@ -3,14 +3,13 @@
 <link rel="shortcut icon" href="my logo.png"/>
 <link rel="stylesheet" type="text/css" href="index.css">
 <style>
-.pro{
-	color:cyan;
-	font-size:25px;
-	position:fixed;
-	top:-20px;
+.cool{
+	width:50%;
 }
-.pro:hover{
-	color:cyan;
+@media (orientation:portrait){
+.cool{
+	width:100%;
+}
 }
 </style>
 <head>
@@ -18,58 +17,94 @@
 	<title>Ami-Dev</title>
 </head>
 <body>
-
 <br><br><br><br><br><br>
-<center>
-<div id="card">
-<a href="cell-dictionary/index.html">
-<h2 style="color:black;">Cell-Dictionary</h2>
-<img src="cell icon.png"/>
-</a>
-</div>
-<br><br>
-<div id="card">
-<a href="physics-calculator/index.html">
-<h2 style="color:black;">Physics-Calculator</h2>
-<img src="physics icon.png"/>
-</a>
-</div>
-<br><br>
-<div id="card">
-<a href="chemistry-calculator/index.html">
-<h2 style="color:black;">Chemistry Calculator</h2>
-<img src="chemistry icon.png"/>
-</a>
-</div>
 
+<center>
+<h1>Welcome to <b class="amidev">Ami-Dev.io</b></h1>
+<img src="cool.png" class="cool"/><br><br><br><br><br><br>
+<hr/>
+</center>
+<center>
+<button class="amidev">Apps</button>
+</center><br><br>
+
+
+
+<center>
+<div>
+	<a href="physics-calculator/index.html"><img src="physics icon.png" class="apps"/></a>&nbsp;<a href="cell-dictionary/index.html"><img src="cell icon.png" class="apps"/></a>&nbsp;<a href="chemistry-calculator/index.html"><img src="chemistry icon.png" class="apps"/></a>
+</div>
+</center><br><br><br><br><br><br><br>
+<hr/>
+
+
+
+<center>
+<button class="amidev">Libraries</button>
+</center>
+<center>
+<div class="libs">
+	<a href="gravity lib.html">
+		<div class="libLink">
+			<center>
+		<h1 class="libTxt">Gravity Simulator</h1>
+		<iframe src="gravity eg.html" class="libFrame"></iframe>
+			</center>
+		</div>
+	</a>&nbsp;&nbsp;
+
+	<a href="drag lib.html">
+		<div class="libLink">
+			<center>
+		<h1 class="libTxt">Drag Elements</h1>
+		<img src="drageg.gif" class="libFrame"/>
+			</center>
+		</div>
+	</a>&nbsp;&nbsp;
+
+	<a href="css-positioner lib.html">
+		<div class="libLink">
+			<center>
+		<h1 class="libTxt">Css-Positioner</h1>
+		<img src="csp.gif" class="libFrame"/>
+			</center>
+		</div>
+	</a>
+</div>
+</center><br><br><br><br><br><br><br>
+
+<hr/>
+
+<center>
+<button class="amidev">About me</button><br><br>
+</center>
+
+<center>
+<h1>Hi There!</h1>
+<p style="font-size:20px;">My name is Amiel-Sintayehu<br><br>
+	I am a Web/App developer.
+
+</p>
+
+<h2>My youTube channel:</h2>
+<a href="https://www.youtube.com/channel/UC7py8QjaZAG5KIcJvn1InBQ" target="_blank"><img src="my youtube.jpg" class="my_youtube"/></a>
+
+</center>
+
+
+<center>
 <header>
 <script data-ad-client="ca-pub-6182620840292155" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </header>
-
-
 </center>
-<!-- This is the nav bar -->
-<div class="nav">
-<h1 class="title">Ami-Dev</h1>
-<h4 class="pro">Projects</h4>
-<a href="lib.html"><h4 class="lib">Libraries</h4></a>
-<a href="dev.html"><h4 class="dev">Developer</h4></a>
-</div>
-<div class="hum">
-<img src="hum.png" class="hum"/>
-	</div>
 
-<div class="slide1">
-<button id="x">x</button>
-<br><br><br>
-<center>
-<h3 style="color:cyan;">Projects</h3><br>
-<a href="lib.html"><h3>Libraries</h3></a><br>
-<a href="dev.html"><h3>Developer</h3></a>
-</center>
-</div>
-<!-- The above is the nav bar -->
+<br><br><br><br>
+
+<nav-bar></nav-bar>
+
+
 <h3>©Amiel-Sintayehu(Ami-Dev)</h3>
 </body>
+<script src="component.js"></script>
 <script src="index.js"></script>
 </html>
