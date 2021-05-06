@@ -8,6 +8,14 @@ function Drag(selector){
     var element=document.querySelector(selector);
     element.style.position="absolute";
     element.style.transition="linear";
+
+    element.ontouchmove=(event)=>{
+        var touchlocation=event.targetTouches[0];
+        element.style.top=touchlocation.pageY+"px";
+        element.style.left=touchlocation.pageX+"px";
+    
+    }
+
     element.onmousedown=function(){
     element.style.cursor="pointer";
         drag=element;
@@ -25,4 +33,3 @@ document.onmousemove=function(e){
     drag.style.left=x+"px";
 }
 
-//Copyright© Amiel Sintayehu(Ami-Dev)
