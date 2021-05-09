@@ -1,7 +1,7 @@
 self.addEventListener("install",e=>{
     e.waitUntil(
         caches.open("static").then(cache=>{
-            return cache.addAll(["https://amieldev.github.io/chemistry-calculator/index.html","index.html","atom btn2.png","nuclie.jpg","nuclie-m.jpg","calculator.html","calculator.css","calculator.js","style.css","back.png","hum.png","setting.html","privacy.html","main.js"]);
+            return cache.addAll(["https://amieldev.github.io/chemistry-calculator/","index.html","atom btn2.png","nuclie.jpg","nuclie-m.jpg","calculator.html","calculator.css","calculator.js","style.css","back.png","hum.png","setting.html","privacy.html","main.js"]);
         })
     )
 });
