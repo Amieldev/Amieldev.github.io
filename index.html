@@ -5,6 +5,26 @@
 <link rel="shortcut icon" href="my logo.png"/>
 <link rel="stylesheet" type="text/css" href="index.css">
 <style>
+@keyframes spin{
+	from{transform: rotateZ(0deg);}
+	to{transform: rotateZ(360deg);}
+}
+@keyframes Fakespin{
+	from{transform: rotateZ(0deg);}
+	to{transform: rotateZ(-360deg);}
+}
+.spinner{
+	width:150px;height:150px;
+	border:7px solid #ff0066;border-radius:20px;
+	animation:spin linear 2s infinite;
+	background-color:#ff0066;
+}
+.logo{
+	width:150px;height:150px;
+	background-color:white;
+	border-radius:50%;
+	animation:Fakespin linear 2s infinite;
+}
 .cool{
 	width:50%;
 }
@@ -23,7 +43,11 @@
 
 <center>
 <h1>Welcome to <b class="amidev">Ami-Dev.io</b></h1>
-<img src="cool.png" class="cool"/><br><br><br><br><br><br>
+<img src="cool.png" class="cool"/><br><br>
+<div class="spinner">
+<img src="my logo.png" class="logo"/>
+</div>
+<br><br><br>
 <hr/>
 </center>
 <center>
@@ -108,5 +132,4 @@
 </div>
 </body>
 <script src="component.js"></script>
-<script src="index.js"></script>
 </html>
