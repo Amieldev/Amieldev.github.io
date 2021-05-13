@@ -1,7 +1,7 @@
 self.addEventListener("install",e=>{
     e.waitUntil(
         caches.open("static").then(cache=>{
-            return cache.addAll(["https://amieldev.github.io/my-pwa/neba/","old town.mp3","marsh.jpg","style.jpg","style.css"]);
+            return cache.addAll(["https://amieldev.github.io/my-pwa/neba/","astra.mp3","marsh.jpg","style.jpg","style.css"]);
         })
     )
 });
