@@ -1,10 +1,14 @@
 self.addEventListener("install",e=>{
     e.waitUntil(
         caches.open("static").then(cache=>{
-            return cache.addAll(["marsh.jpg","logo192.png","style.jpg","style.css"])
+            return cache.addAll(["https://amieldev.github.io/my-pwa/neba/","old town.mp3","marsh.jpg","style.jpg","style.css"]);
         })
     )
 });
 self.addEventListener("fetch",e=>{
-    console.log(`Fetch request for:${e.request.url}`);
+    e.respondWith(
+        caches.match(e.request).then(response => {
+            return response || fetch(e.request);
+        })
+    );
 })
