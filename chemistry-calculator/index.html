@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="shoertcut icon" href="icon.png"/>
+<link rel="shortcut icon" href="icon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=0.8, minimum-scale=1"/>
     <link rel="stylesheet" href="style.css"/>
     <title>Chemistry-Calculator</title>
@@ -26,8 +26,7 @@
 </center>
 <h4 class="cright">©Amiel-Sintayehu(Ami-Dev)</h4>
 
-
-
+<div class="overLay"></div>
 
 <style>
     .nav{
@@ -47,26 +46,21 @@
         background:transparent;
     }
     .sideBar{
-        width:200px;height:100%;border-radius:0px;font-family: none;
-        background:white;border-right:3px solid orange;border:none;border-right:3px solid #08c0ff;
-    
-        position: fixed;top:0px;left:-100%;
-        transition: linear 0.3s;
+        width:250px;height:100%;border-radius:0px;font-family: none;
+        background:white;border-right:3px solid orange;border:none;
+        box-shadow:15px 15px 0px(rgba(0,0,0,1));
+        position: fixed;top:0px;left:-250px;
+        transition: linear 0.2s;
     }
     .sideBarActive{
-        width:200px;height:100%;
         position:fixed;top:0px;left:0px;
-    }
-    .x{
-        width:50px;position: absolute;top:10px;left:10px;
-        border-radius:50%;border:2px solid silver;
     }
     .settingIcon{
         width:25px;height:25px;
-        position: absolute;top:200px;left:20px;
+        position: absolute;top:300px;left:20px;
     }
     .settingTxt{
-        position: absolute;top:185px;left:55px;
+        position: absolute;top:285px;left:55px;
         color:black;
     }
     .settingTxt:hover{
@@ -74,14 +68,26 @@
     }
     .privacyIcon{
         width:25px;height:25px;
-        position: absolute;top:270px;left:20px;
+        position: absolute;top:370px;left:20px;
     }
     .privacyTxt{
-        position: absolute;top:255px;left:55px;
+        position: absolute;top:355px;left:55px;
         color:black;
     }
     .privacyTxt:hover{
         color:orange;
+    }
+    .overLay{
+        position: absolute;
+        top:0px;left:0px;
+        width:100%;height:100%;
+        background:rgba(0,0,0,0.50);
+        transition:linear 0.2;
+        visibility:hidden;
+    }
+    .blur{
+        visibility:visible;
+        opacity: 1;
     }
     
     </style>
@@ -95,7 +101,7 @@
     
     <!--Side-Bar-->
     <div class="sideBar">
-    <img src="x.png" class="x"/>
+    <img src="atom btn2.png" style="width:100%;"/>
     <a href="setting.html"><img src="setting.png" class="settingIcon"/><h4 class="settingTxt">setting</h4></a>
     <a href="privacy.html"><img src="privacy.png" class="privacyIcon"/><h4 class="privacyTxt">privacy policy</h4></a>
     </div>
@@ -109,8 +115,11 @@
 
 </body>
 <script>
-var start=document.querySelector(".start");
-var clickto=document.querySelector(".clickto");
+const start=document.querySelector(".start");
+const clickto=document.querySelector(".clickto");
+const overLay=document.querySelector(".overLay");
+
+
 start.onclick=function(){
 start.classList.add("spin");
 clickto.innerHTML="";
@@ -120,16 +129,17 @@ start.classList.remove("spin");
 },1300)
 }
 
-
 const hum=document.querySelector(".hum");
-const xBtn=document.querySelector(".x");
 const menu=document.querySelector(".sideBar");
 
 hum.onclick=()=>{
-	menu.classList.add("sideBarActive");
+    menu.classList.add("sideBarActive")
+    overLay.classList.add("blur");
+
 }
-xBtn.onclick=()=>{
-	menu.classList.remove("sideBarActive");
+overLay.onclick=()=>{
+    menu.classList.remove("sideBarActive");
+    overLay.classList.remove("blur");
 }
 
 </script>
