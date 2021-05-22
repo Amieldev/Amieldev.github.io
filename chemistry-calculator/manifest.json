@@ -2,7 +2,7 @@
   "name": "Chemistry-Calculator",
   "short_name": "Chemistry calculator",
   "start_url": ".",
-  "background_color": "cyan",
+  "background_color": "rgb(10, 182, 182)",
   "theme_color": "#08c0ff",
   "display": "standalone",
   "icons": [
