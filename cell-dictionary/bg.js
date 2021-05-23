@@ -8,6 +8,8 @@ function quit(e){
 
 //Theme Toggle
 
+/*
+
 document.body.style=localStorage.theme;
 document.getElementById("light-dark").style.backgroundColor=localStorage.btn;
 document.querySelector(".sideBar").style.backgroundColor=localStorage.sideBar;
@@ -44,3 +46,4 @@ lightDark.onclick=()=>{
 	light();
 }
 }
+*/
