@@ -61,7 +61,8 @@ a:hover{
 }
 .aboutme{
 	background-color:#3d3d3d;
-	color:white;
+	color:white;position: absolute;
+	width:100%;
 }
 .my_youtube{
 	border-radius:50%;width:300px;height:300px;
