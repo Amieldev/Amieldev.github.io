@@ -14,7 +14,11 @@ a:hover{
 .apps{
 	width:150px;
 	border-radius:40px;
-	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+	box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+	transition:linear 0.1s;
+}
+.apps:hover{
+	box-shadow:10px 10px 5px rgba(0,0,0,0.3);
 }
 .libs{
 	display: flex;
@@ -36,7 +40,11 @@ a:hover{
 	background:#ff0066;
 	width:352px;
 	border-radius:20px;
-	box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+	box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+	transition:linear 0.1s;
+}
+.libLink:hover{
+	box-shadow:15px 15px 10px rgba(225,0,0,0.3);
 }
 .libTxt{
 	color:white;font-family:cursive;

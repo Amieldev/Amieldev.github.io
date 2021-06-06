@@ -13,7 +13,7 @@ class NavBar extends HTMLElement{
         top:0px;
         display:inline-block;
         display:flex;
-        box-shadow:0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+        box-shadow:0px 7px 8px rgba(0,0,0,0.3);
     }
     .title{
         position:relative;
