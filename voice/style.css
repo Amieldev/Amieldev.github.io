@@ -1,0 +1,103 @@
+body{
+    background:rgb(220,220,220);
+}
+a{
+    text-decoration:none;
+    color:black;
+    position:absolute;
+    left:40px;
+    cursor:pointer;
+}
+a:hover{
+    color:#ff0066;
+}
+.nav-bar{
+    width:100%;
+    height:50px;
+    background:linear-gradient(-45deg,cyan,cyan,#ff0066,#ff0066);
+    position: fixed;
+    top:0px;left:0px;
+    box-shadow:0px 5px 5px rgba(0,0,0,0.3);
+}
+#hum-burger-menu{
+    color:white;
+    position:fixed;
+    top:12px;left:15px;
+    cursor: pointer;
+}
+#back-arrow{
+    color:white;
+    position:fixed;
+    top:12px;left:15px;
+    cursor: pointer;
+}
+.side-bar{
+    width:250px;
+    height:100%;
+    background:rgb(255,255,255);
+    position:fixed;
+    top:0px;left:-250px;
+    transition: ease-in 0.2s;
+}
+.overlay{
+    width:100%;height:100%;
+    position: fixed;top:0px;left:0px;
+    background:rgba(0,0,0,0.3);
+    visibility: hidden;
+}
+.overlay-active{
+    visibility:visible;
+}
+.side-bar-active{
+    left:0px;
+    box-shadow:10px 0px 10px rgba(0,0,0,0.3);
+}
+.btn{
+    width:70px;height:70px;
+    border:none;
+    border-radius:50%;
+    background:linear-gradient(45deg,cyan,cyan,#ff0066,#ff0066);
+    color:white;
+    position: fixed;
+    bottom:50px;left:50%;
+    margin:-25px;
+    box-shadow:-5px -5px 5px rgb(255,255,255),
+    5px 5px 5px rgba(0,0,0,0.3);
+    outline:none;
+    cursor:pointer;
+}
+.userText{
+    height:30px;
+    box-shadow:-5px -5px 5px rgb(255,255,255),
+    5px 5px 5px rgba(0,0,0,0.3);
+    border:none;
+    border-radius:5px;
+    position:absolute;
+    left:20px;
+    background:cyan;
+}
+.aiText{
+    height:30px;
+    box-shadow:-5px -5px 5px rgb(255,255,255),
+    5px 5px 5px rgba(0,0,0,0.3);
+    border:none;
+    border-radius:5px;
+    position:absolute;
+    right:20px;
+    background:#ff0066;
+}
+.settingLink{
+    top:35%;
+}
+.setting{
+    position:absolute;
+    top:35%;margin:-6px;font-size:20px;
+}
+.privacy-policyLink{
+    position:absolute;
+    top:50%;
+}
+.privacy{
+    position: absolute;
+    top:50%;margin:-12px;font-size:19px;
+}

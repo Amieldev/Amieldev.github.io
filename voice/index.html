@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="iconfonts/material-icons.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+    <title>Speech Recognition</title>
+
+    <meta name="theme-color" content="black"/>
+    <link rel="manifest" href="manifest.json"/>
+
+</head>
+<body>
+    <br><br><br><br>
+    <button class="btn"><i class="material-icons">mic</i></button>
+
+<div class="nav-bar">
+    <i class="material-icons" id="hum-burger-menu">menu</i>
+</div>
+
+<div class="overlay"></div>
+
+<div class="side-bar">
+    <a href="setting.html" class="settingLink"><div><i class="material-icons">settings</i>&nbsp;&nbsp;&nbsp;<label class="setting">setting</label></div></a>
+    <a href="privacy.html" class="privacy-policyLink"><div><i class="material-icons">security</i>&nbsp;&nbsp;&nbsp;&nbsp;<label class="privacy">privacy</label></div></a>
+</div>
+</body>
+<script src="app.js"></script>
+<script src="components.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register("sw.js").then(register =>{
+        console.log("Sw registered")
+    }).catch(error =>{
+        console.log(error)
+    });
+}
+</script>
+</html>

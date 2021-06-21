@@ -76,6 +76,10 @@ a:hover{
 	border-radius:50%;width:300px;height:300px;
 	border:5px solid orangered;
 }
+.my_youtube:hover{
+	box-shadow:-5px -5px 10px rgba(0,0,0,0.3),
+	5px 5px 10px rgba(0,0,0,0.3);
+}
 @media (orientation:portrait){
 .my_youtube{
 	width:200px;height:200px;
